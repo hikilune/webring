@@ -34,5 +34,9 @@
     if (random) random.href = sites[randomIndex];
   }
 
-  document.addEventListener("DOMContentLoaded", initWebring);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initWebring);
+  } else {
+    initWebring();
+  }
 })();
