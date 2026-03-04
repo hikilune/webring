@@ -1,0 +1,27 @@
+.example {
+    margin-top: 2em;
+    padding: 24px 28px;
+    background: white;
+    border: 1px solid #bcc8e0;
+    font-family: "Lora", Georgia, serif;
+}
+
+.example a {
+    font-weight: 600;
+}
+
+/* Estilize os links usando os seletores abaixo: */
+
+.brwebring {
+    text-align: center;
+}
+
+.brwebring .prev {
+    color: #2e7a4f;
+}
+.brwebring .rand {
+    color: #b8921a;
+}
+.brwebring .next {
+    color: #1a4b7a;
+}

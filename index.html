@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>br://webring</title>
+
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./assets/webring.css" />
+    <link rel="stylesheet" href="./assets/highlight.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>br://web</h1>
+
+    <p>
+      O <strong>script.js</strong> cuida apenas da lógica de navegação. Você é
+      livre para criar qualquer visual que quiser, siga o guia abaixo! :)
+    </p>
+
+    <h2>1. Importe o script</h2>
+
+    <p>
+      Basta adicionar a tag abaixo no final do seu <code>&lt;body&gt;</code>
+    </p>
+
+    <pre><code class="language-html">&lt;script src="https://hikilune.github.io/webring/script.js"&gt;&lt;/script&gt;</code></pre>
+
+    <h2>2. Crie a estrutura HTML</h2>
+
+    <p>Seu frontend só precisa:</p>
+
+    <ul>
+      <li>Um elemento com classe <code>brwebring</code></li>
+      <li>Um link com classe <code>prev</code></li>
+      <li>Um link com classe <code>rand</code></li>
+      <li>Um link com classe <code>next</code></li>
+    </ul>
+
+    <p>Exemplo mínimo:</p>
+
+    <pre><code class="language-html">&lt;div class="brwebring"&gt;
+  &lt;a class="prev" href="#"&gt;Prev&lt;/a&gt;
+  &lt;a class="rand" href="#"&gt;Random&lt;/a&gt;
+  &lt;a class="next" href="#"&gt;Next&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+
+    <h2>3. Personalize do seu jeito</h2>
+
+    <p>
+      O script não interfere no visual. Use os seletores abaixo no seu CSS para
+      estilizar do seu jeito:
+    </p>
+
+    <pre><code class="language-css">.brwebring { text-align: center; }
+
+.brwebring .prev   { color: #2e7a4f; } /* verde  */
+.brwebring .rand   { color: #b8921a; } /* amarelo */
+.brwebring .next   { color: #1a4b7a; } /* azul   */</code></pre>
+
+    <h2>4. Exemplo</h2>
+
+    <p>Veja como fica com um estilo simples aplicado:</p>
+
+    <div class="example">
+      <div class="brwebring">
+        br://web<br /><br />
+
+        <a class="prev" href="#">← Prev</a> |
+        <a class="rand" href="#">Random</a> |
+        <a class="next" href="#">Next →</a>
+      </div>
+    </div>
+
+    <h2>5. Como faço para entrar?</h2>
+
+    <p>Me manda uma mensagem no discord: <strong>hikilune</strong></p>
+
+    <script src="./script.js"></script>
+
+    <script src="./assets/highlight.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <hr />
+
+    <h2>Resumo</h2>
+
+    <ul>
+      <li>Importe o script no seu html</li>
+      <li>Crie a estrutura HTML com os elementos necessários</li>
+      <li>As classes precisam existir para funcionar</li>
+    </ul>
+
+    <p>Agora é só criar seu próprio visual e integrar ao seu site.</p>
+  </body>
+</html>
